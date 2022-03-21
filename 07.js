@@ -10,37 +10,37 @@
 // dashatize(274) -> '2-7-4'
 // dashatize(6815) -> '68-1-5'
 
-// function dashatize(num) {
-//   // return Math.abs(num)
-//   if (isNaN(num)) {
-//     return 'NaN';
-//   }
+function dashatize(num) {
+  // return Math.abs(num)
+  if (isNaN(num)) {
+    return 'NaN';
+  }
 
-//   let string = "";
+  let string = "";
 
-//   // convert to array
-//   const arr = num.toString().split("")
-//   // loop through numbers
-//   for (let i = 0; i < arr.length; i++) {
-//     // for index 0 check that current and next are even
-//     if (i == 0 && arr[i] == "-") {
-//       string;
-//     } else if (i == arr.length - 1) {
-//       string += arr[i]
-//     } else if (arr[i] % 2 == 0 && arr[i + 1] % 2 == 0) {
-//       string += arr[i]
-//     } else if (arr[i] % 2 != 0 && arr[i + 1] % 2 != 0) {
-//       string += arr[i] + "-";
-//     } else if (arr[i] % 2 == 0 && arr[i + 1] % 2 != 0) {
-//       string += arr[i] + "-";
-//     } else if (arr[i] % 2 != 0 && arr[i + 1] % 2 == 0) {
-//       string += arr[i] + "-";
-//     }
-//   }
-//   return string;
-//   // otherwise put hash
+  // convert to array
+  const arr = num.toString().split("")
+  // loop through numbers
+  for (let i = 0; i < arr.length; i++) {
+    // for index 0 check that current and next are even
+    if (i == 0 && arr[i] == "-") {
+      string;
+    } else if (i == arr.length - 1) {
+      string += arr[i]
+    } else if (arr[i] % 2 == 0 && arr[i + 1] % 2 == 0) {
+      string += arr[i]
+    } else if (arr[i] % 2 != 0 && arr[i + 1] % 2 != 0) {
+      string += arr[i] + "-";
+    } else if (arr[i] % 2 == 0 && arr[i + 1] % 2 != 0) {
+      string += arr[i] + "-";
+    } else if (arr[i] % 2 != 0 && arr[i + 1] % 2 == 0) {
+      string += arr[i] + "-";
+    }
+  }
+  return string;
+  // otherwise put hash
   
-// }
+}
 
 // Other solutions
 function dashatize(num) {
